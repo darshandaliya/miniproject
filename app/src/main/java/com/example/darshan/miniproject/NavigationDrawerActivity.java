@@ -88,7 +88,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
             // Handle the camera action
         } else if (id == R.id.nav_logout) {
             finish();
-            startActivity(new Intent(this, NavigationIntent.class));
+            startActivity(new Intent(this, NavigationLogout.class));
 
         } else if (id == R.id.nav_news) {
             finish();
