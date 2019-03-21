@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(firebaseAuth.getCurrentUser() !=null){
             //Profile Activity here
             finish();
-            startActivity(new Intent(getApplicationContext(), Rview.class));
+            startActivity(new Intent(getApplicationContext(), navigationfinal.class));
         }
 
         progressDialog=new ProgressDialog(this);
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                                 //Profile Activity here
                             finish();
-                            startActivity(new Intent(getApplicationContext(), Rview.class));
+                            startActivity(new Intent(getApplicationContext(), navigationfinal.class));
 
                             //User registered Successfully.
                             //Logs in and redirects to the homepage.

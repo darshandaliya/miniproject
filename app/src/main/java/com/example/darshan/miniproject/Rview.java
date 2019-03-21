@@ -102,7 +102,7 @@ public class Rview extends AppCompatActivity implements NavigationView.OnNavigat
 
         switch (menuItem.getItemId()) {
             case R.id.nav_customerservice:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CustomerService()).commit();
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CustomerService()).commit();
                 break;
 
             case R.id.nav_news:

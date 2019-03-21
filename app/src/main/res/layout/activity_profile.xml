@@ -34,6 +34,13 @@
                 android:text="Logout"
                 android:layout_gravity="center_horizontal" />
 
+            <Button
+                android:id="@+id/navigationbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Navigation"
+                android:layout_gravity="center_horizontal" />
+
 
         </LinearLayout>
     </RelativeLayout>

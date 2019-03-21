@@ -42,7 +42,7 @@ public class login extends AppCompatActivity implements View.OnClickListener{
         if(firebaseAuth.getCurrentUser() !=null){
             //Profile Activity here
             finish();
-            startActivity(new Intent(getApplicationContext(), NavigationDrawerActivity.class));
+            startActivity(new Intent(getApplicationContext(), navigationfinal.class));
         }
 
         editTextEmail=(EditText)findViewById(R.id.emailid);
@@ -92,7 +92,7 @@ public class login extends AppCompatActivity implements View.OnClickListener{
                         if (task.isSuccessful()){
                             //Start the profile activity
                             finish();
-                            startActivity(new Intent(getApplicationContext(), NavigationDrawerActivity.class));
+                            startActivity(new Intent(getApplicationContext(), navigationfinal.class));
                     }
                     else
                        {

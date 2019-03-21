@@ -84,7 +84,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
         FragmentManager fragmentManager= getSupportFragmentManager();
 
         if (id == R.id.nav_customerservice) {
-            fragmentManager.beginTransaction().replace(R.id.NavDrawerContentFrameLayout, new CustomerService()).commit();
+           // fragmentManager.beginTransaction().replace(R.id.NavDrawerContentFrameLayout, new CustomerService()).commit();
             // Handle the camera action
         } else if (id == R.id.nav_logout) {
             finish();
