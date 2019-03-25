@@ -16,7 +16,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
 
     private TextView textViewUserEmail;
     private Button buttonLogout;
-    private Button navigationbutton;
+    private Button buttonmobi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +40,8 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         buttonLogout=(Button)findViewById(R.id.Logout);
 
         buttonLogout.setOnClickListener(this);
-        navigationbutton=(Button)findViewById(R.id.navigationbutton);
-        navigationbutton.setOnClickListener(this);
+        buttonmobi=(Button)findViewById(R.id.mobi);
+        buttonmobi.setOnClickListener(this);
     }
 
     @Override
@@ -51,9 +51,9 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             finish();
             startActivity(new Intent(this, cover.class));
         }
-        if(v==navigationbutton){
+        if(v==buttonmobi){
             finish();
-            startActivity(new Intent(this,navigationfinal.class));
+            startActivity(new Intent(this,Rview.class));
         }
     }
 }

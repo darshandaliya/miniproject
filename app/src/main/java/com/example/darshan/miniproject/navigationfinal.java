@@ -12,10 +12,13 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class navigationfinal extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
+    private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,7 @@ public class navigationfinal extends AppCompatActivity {
         setContentView(R.layout.activity_navigationfinal);
         drawerLayout=findViewById(R.id.DL);
         NavigationView navigationView=findViewById(R.id.finalnavigationview);
+        firebaseAuth=FirebaseAuth.getInstance();
 //        ActionBar actionBar=getSupportActionBar();
 //        actionBar.setDisplayHomeAsUpEnabled(true);
 //        actionBar.setHomeAsUpIndicator(R.drawable.headericon);
@@ -67,8 +71,9 @@ public class navigationfinal extends AppCompatActivity {
                 }
                 else if (id==R.id.nav_logoutf)
                 {
+                    firebaseAuth.signOut();
                     finish();
-                    Intent intent=new Intent(navigationfinal.this,MainActivity.class);
+                    Intent intent=new Intent(navigationfinal.this,cover.class);
                     startActivity(intent);
                 }
                 else if (id==R.id.nav_faqf)
@@ -81,6 +86,12 @@ public class navigationfinal extends AppCompatActivity {
                 {
                     finish();
                     Intent intent=new Intent(navigationfinal.this,settings.class);
+                    startActivity(intent);
+                }
+                else if (id==R.id.nav_productsf)
+                {
+                    finish();
+                    Intent intent=new Intent(navigationfinal.this,Rview.class);
                     startActivity(intent);
                 }
                 menuItem.setChecked(true);

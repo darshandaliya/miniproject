@@ -35,10 +35,10 @@
                 android:layout_gravity="center_horizontal" />
 
             <Button
-                android:id="@+id/navigationbutton"
+                android:id="@+id/mobi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Navigation"
+                android:text="mobi"
                 android:layout_gravity="center_horizontal" />
 
 

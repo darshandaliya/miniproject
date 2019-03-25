@@ -13,9 +13,7 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/**
- * Created by SHAJIB-PC on 10/23/2017.
- */
+
 
 class ListNewsAdapter extends BaseAdapter {
     private Activity activity;

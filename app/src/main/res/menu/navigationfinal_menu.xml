@@ -11,9 +11,9 @@
         android:icon="@drawable/newsicon"
         android:title="News" />
     <item
-        android:id="@+id/nav_accountf"
-        android:icon="@drawable/accounticon"
-        android:title="Account" />
+        android:id="@+id/nav_productsf"
+        android:icon="@drawable/productsicon"
+        android:title="Products" />
     <item
         android:id="@+id/nav_logoutf"
         android:icon="@drawable/logouticon"
