@@ -18,7 +18,7 @@
         <activity android:name=".settings"></activity>
         <activity android:name=".FAQs" />
         <activity android:name=".CustomerService" />
-        <!--&lt;!&ndash;<activity android:name=".splash" />&ndash;&gt;-->
+        <activity android:name=".cover" />
         <activity android:name=".navigationfinal" />
         <activity android:name=".DetailsActivity" />
         <activity android:name=".newsapp" />
@@ -29,7 +29,7 @@
         <activity android:name=".MainActivity"/>
         <!--<activity android:name=".ProfileActivity" />-->
         <activity android:name=".login" />
-        <activity android:name=".cover">
+        <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

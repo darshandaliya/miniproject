@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".splash"
-    android:background="@color/white">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".splash">
 
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
-        android:text="SAble"
-        android:textAlignment="center"
-        android:textSize="50dp"
-        android:fontFamily="sans-serif-condensed-light"
-        android:textColor="@color/colorPrimary"
-        />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:text=""-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="@color/colorPrimary"-->
+        <!--android:textSize="30sp" />-->
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="60dp"
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="115dp"
-        android:progressDrawable="@color/colorAccent" />
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/sabletransparent" />
 
 </RelativeLayout>

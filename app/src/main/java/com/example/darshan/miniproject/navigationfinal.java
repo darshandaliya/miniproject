@@ -59,13 +59,13 @@ public class navigationfinal extends AppCompatActivity {
                 if(id==R.id.nav_newsf)
                 {
 
-                    finish();
+//                    finish();
                     Intent intent=new Intent(navigationfinal.this,newsapp.class);
                     startActivity(intent);
                 }
                 else if (id==R.id.nav_customerservicef)
                 {
-                    finish();
+//                    finish();
                     Intent intent=new Intent(navigationfinal.this,CustomerService.class);
                     startActivity(intent);
                 }
@@ -78,19 +78,19 @@ public class navigationfinal extends AppCompatActivity {
                 }
                 else if (id==R.id.nav_faqf)
                 {
-                    finish();
+//                    finish();
                     Intent intent=new Intent(navigationfinal.this,FAQs.class);
                     startActivity(intent);
                 }
                 else if (id==R.id.nav_settingsf)
                 {
-                    finish();
+//                    finish();
                     Intent intent=new Intent(navigationfinal.this,settings.class);
                     startActivity(intent);
                 }
                 else if (id==R.id.nav_productsf)
                 {
-                    finish();
+//                    finish();
                     Intent intent=new Intent(navigationfinal.this,Rview.class);
                     startActivity(intent);
                 }
