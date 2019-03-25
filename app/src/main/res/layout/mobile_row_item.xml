@@ -10,13 +10,13 @@
     android:layout_height="150dp"
     >
 
-    <ImageView
-        android:src="@drawable/loading_shape"
-        android:id="@+id/thumbnail"
-        android:layout_width="100dp"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        />
+    <!--<ImageView-->
+        <!--android:src="@drawable/loading_shape"-->
+        <!--android:id="@+id/thumbnail"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--/>-->
 
     <LinearLayout
         android:layout_width="match_parent"

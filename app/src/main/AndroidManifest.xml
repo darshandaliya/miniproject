@@ -22,10 +22,10 @@
         <activity android:name=".navigationfinal" />
         <activity android:name=".DetailsActivity" />
         <activity android:name=".newsapp" />
-        <!--<activity android:name=".Retrieve" />-->
-        <activity
-        android:name=".Rview"
-        android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Retrieve" />
+        <!--<activity-->
+        <!--android:name=".Rview"-->
+        <!--android:theme="@style/AppTheme.NoActionBar" />-->
         <activity android:name=".MainActivity"/>
         <!--<activity android:name=".ProfileActivity" />-->
         <activity android:name=".login" />

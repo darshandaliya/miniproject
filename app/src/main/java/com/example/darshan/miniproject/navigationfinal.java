@@ -91,7 +91,7 @@ public class navigationfinal extends AppCompatActivity {
                 else if (id==R.id.nav_productsf)
                 {
 //                    finish();
-                    Intent intent=new Intent(navigationfinal.this,Rview.class);
+                    Intent intent=new Intent(navigationfinal.this,Retrieve.class);
                     startActivity(intent);
                 }
                 menuItem.setChecked(true);

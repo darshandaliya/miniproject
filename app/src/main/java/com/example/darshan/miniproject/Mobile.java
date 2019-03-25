@@ -1,17 +1,15 @@
-package com.example.darshan.miniproject.model;
+package com.example.darshan.miniproject;
 
 public class Mobile {
 
     private String Model ;
-    private int Price;
-    private int RAM;
-    private double Screen_Size;
-    private int Storage;
+    private String Price;
+    private String RAM;
+    private String Screen_Size;
+    private String Storage;
 
-    public Mobile() {
-    }
 
-    public Mobile(String Model, int Price, int RAM, double Screen_Size, int Storage) {
+    public Mobile(String Model, String Price, String RAM, String Screen_Size, String Storage) {
         this.Model = Model;
         this.Price = Price;
         this.RAM = RAM;
@@ -24,19 +22,19 @@ public class Mobile {
         return Model;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return Price;
     }
 
-    public int getRAM() {
+    public String getRAM() {
         return RAM;
     }
 
-    public double getScreen_Size() {
+    public String getScreen_Size() {
         return Screen_Size;
     }
 
-    public int getStorage() {
+    public String getStorage() {
         return Storage;
     }
 
@@ -45,19 +43,19 @@ public class Mobile {
         this.Model = model;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.Price = price;
     }
 
-    public void setRAM(int ram) {
+    public void setRAM(String ram) {
         this.RAM = ram;
     }
 
-    public void setScreen_Size(double screen_size) {
+    public void setScreen_Size(String screen_size) {
         this.Screen_Size = screen_size;
     }
 
-    public void setStorage(int storage) {
+    public void setStorage(String storage) {
         this.Storage = storage;
     }
 

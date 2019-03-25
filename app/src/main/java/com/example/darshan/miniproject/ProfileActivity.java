@@ -53,7 +53,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         }
         if(v==buttonmobi){
             finish();
-            startActivity(new Intent(this,Rview.class));
+            startActivity(new Intent(this,Retrieve.class));
         }
     }
 }
