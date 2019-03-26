@@ -3,13 +3,15 @@ package com.example.darshan.miniproject;
 public class Mobile {
 
     private String Model ;
-    private String Price;
-    private String RAM;
-    private String Screen_Size;
-    private String Storage;
+    private float Price;
+    private float RAM;
+    private float Screen_Size;
+    private float Storage;
+
+    public Mobile(){}
 
 
-    public Mobile(String Model, String Price, String RAM, String Screen_Size, String Storage) {
+    public Mobile(String Model, float Price, float RAM, float Screen_Size, float Storage) {
         this.Model = Model;
         this.Price = Price;
         this.RAM = RAM;
@@ -17,47 +19,44 @@ public class Mobile {
         this.Storage = Storage;
     }
 
-
-    public String getName() {
+    public String getModel() {
         return Model;
     }
 
-    public String getPrice() {
+    public void setModel(String model) {
+        Model = model;
+    }
+
+    public float getPrice() {
         return Price;
     }
 
-    public String getRAM() {
+    public void setPrice(float price) {
+        Price = price;
+    }
+
+    public float getRAM() {
         return RAM;
     }
 
-    public String getScreen_Size() {
+    public void setRAM(float RAM) {
+        this.RAM = RAM;
+    }
+
+    public float getScreen_Size() {
         return Screen_Size;
     }
 
-    public String getStorage() {
+    public void setScreen_Size(float screen_Size) {
+        Screen_Size = screen_Size;
+    }
+
+    public float getStorage() {
         return Storage;
     }
 
-
-    public void setModel(String model) {
-        this.Model = model;
+    public void setStorage(float storage) {
+        Storage = storage;
     }
-
-    public void setPrice(String price) {
-        this.Price = price;
-    }
-
-    public void setRAM(String ram) {
-        this.RAM = ram;
-    }
-
-    public void setScreen_Size(String screen_size) {
-        this.Screen_Size = screen_size;
-    }
-
-    public void setStorage(String storage) {
-        this.Storage = storage;
-    }
-
 }
 

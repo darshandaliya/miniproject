@@ -56,8 +56,8 @@ public class Retrieve extends AppCompatActivity {
 
                 adapter=new RvAdapter(Retrieve.this,list);
                 recyclerView.setAdapter(adapter);
-
-                recyclerView.setLayoutManager(new LinearLayoutManager(Retrieve.this));
+                RecyclerView.LayoutManager recycleVariable = new LinearLayoutManager(Retrieve.this);
+                recyclerView.setLayoutManager(recycleVariable);
             }
 
             @Override
