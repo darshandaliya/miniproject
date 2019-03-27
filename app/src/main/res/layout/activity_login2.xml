@@ -11,9 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
 
 
         <Button
@@ -22,11 +27,21 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="533dp"
+            android:layout_marginTop="523dp"
             android:layout_marginEnd="105dp"
             android:background="@drawable/buttonstyle"
             android:textColor="#fff"
             android:text="Login" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/gsignin"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="590dp"
+            android:layout_marginEnd="105dp"
+            android:textColor="#fff" />
 
         <EditText
             android:id="@+id/emailid"
@@ -68,7 +83,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="150dp"
-            android:layout_marginTop="611dp"
+            android:layout_marginTop="650dp"
 
             android:text="Click here to Signup "
             android:textAlignment="center"

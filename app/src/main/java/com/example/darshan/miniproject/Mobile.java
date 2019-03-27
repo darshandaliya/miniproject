@@ -2,61 +2,62 @@ package com.example.darshan.miniproject;
 
 public class Mobile {
 
-    private String Model ;
-    private float Price;
-    private float RAM;
-    private float Screen_Size;
-    private float Storage;
+    private String model;
+    private float price;
+    private float ram;
+    private float screen_size;
+    private float storage;
 
-    public Mobile(){}
+    public Mobile()
+    {
+        
+    }
 
-
-    public Mobile(String Model, float Price, float RAM, float Screen_Size, float Storage) {
-        this.Model = Model;
-        this.Price = Price;
-        this.RAM = RAM;
-        this.Screen_Size = Screen_Size;
-        this.Storage = Storage;
+    public Mobile(String model, float price, float ram, float screen_size, float storage) {
+        this.model = model;
+        this.price = price;
+        this.ram = ram;
+        this.screen_size = screen_size;
+        this.storage = storage;
     }
 
     public String getModel() {
-        return Model;
+        return model;
     }
 
     public void setModel(String model) {
-        Model = model;
+        this.model = model;
     }
 
     public float getPrice() {
-        return Price;
+        return price;
     }
 
     public void setPrice(float price) {
-        Price = price;
+        this.price = price;
     }
 
-    public float getRAM() {
-        return RAM;
+    public float getRam() {
+        return ram;
     }
 
-    public void setRAM(float RAM) {
-        this.RAM = RAM;
+    public void setRam(float ram) {
+        this.ram = ram;
     }
 
-    public float getScreen_Size() {
-        return Screen_Size;
+    public float getScreen_size() {
+        return screen_size;
     }
 
-    public void setScreen_Size(float screen_Size) {
-        Screen_Size = screen_Size;
+    public void setScreen_size(float screen_size) {
+        this.screen_size = screen_size;
     }
 
     public float getStorage() {
-        return Storage;
+        return storage;
     }
 
     public void setStorage(float storage) {
-        Storage = storage;
+        this.storage = storage;
     }
 }
-

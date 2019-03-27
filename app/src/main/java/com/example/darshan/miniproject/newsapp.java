@@ -21,7 +21,7 @@ import java.util.HashMap;
 
 public class newsapp extends NavigationDrawerActivity{
 
-    String API_KEY = "8190df9eb51445228e397e4185311a66"; // ### YOUE NEWS API HERE ###
+    String API_KEY = "8190df9eb51445228e397e4185311a66"; // ### YOUR NEWS API HERE ###
     String NEWS_SOURCE = "techradar";
     //String NEWS_SOURCE2 = ""; //NOT REQUIRED NOW.USE FOR EXTENDING AFTERWARDS
     ListView listNews;

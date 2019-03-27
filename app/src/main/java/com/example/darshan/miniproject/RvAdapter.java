@@ -57,8 +57,8 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.MyViewHolder> {
 
         myViewHolder.mname.setText(String.valueOf(mData.get(i).getModel()));
         myViewHolder.mprice.setText(String.valueOf(mData.get(i).getPrice()));
-        myViewHolder.mram.setText(String.valueOf(mData.get(i).getRAM()));
-        myViewHolder.mss.setText(String.valueOf(mData.get(i).getScreen_Size()));
+        myViewHolder.mram.setText(String.valueOf(mData.get(i).getRam()));
+        myViewHolder.mss.setText(String.valueOf(mData.get(i).getScreen_size()));
         myViewHolder.mstorage.setText(String.valueOf(mData.get(i).getStorage()));
 
 
