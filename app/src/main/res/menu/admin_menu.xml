@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item
         android:id="@+id/nav_faqf"
         android:icon="@drawable/faqicon"
@@ -11,9 +10,9 @@
         android:icon="@drawable/newsicon"
         android:title="News" />
     <item
-        android:id="@+id/nav_productsf"
+        android:id="@+id/nav_addproducts"
         android:icon="@drawable/productsicon"
-        android:title="Products" />
+        android:title="Add Products" />
     <item
         android:id="@+id/nav_logoutf"
         android:icon="@drawable/logouticon"
@@ -22,7 +21,6 @@
     <item
         android:id="@+id/nav_customerservicef"
         android:icon="@drawable/customerserviceicon"
-        android:title="Customer Services" />
-
+        android:title="Admin Services" />
 
 </menu>
