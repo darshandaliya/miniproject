@@ -26,6 +26,10 @@ public class adminlogin extends AppCompatActivity implements View.OnClickListene
 
 
 
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +40,8 @@ public class adminlogin extends AppCompatActivity implements View.OnClickListene
         email=(EditText)findViewById(R.id.adminemail);
         pass=(EditText)findViewById(R.id.adminpass);
         bb=(Button)findViewById(R.id.bbadmin);
+
+
 
 
         bb.setOnClickListener(this);
@@ -65,16 +71,18 @@ public class adminlogin extends AppCompatActivity implements View.OnClickListene
             //To stop the function from executing further.
         }
 
-        if (loginemail=="darshandaliya@gmail.com" && loginpassword=="admin212")
-        {
+        if(email.getText().toString().equals("priyanshubindal@gmail.com") && pass.getText().toString().equals("priyanshu123")){
+
             finish();
             startActivity(new Intent(this, adminview.class));
+            //correcct password
+        }else{
+            //wrong password
         }
-        else
         {
 
-
         }
+
 
 
 

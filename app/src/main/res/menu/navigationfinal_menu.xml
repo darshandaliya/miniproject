@@ -7,6 +7,10 @@
         android:iconTint="@color/design_default_color_primary"
         android:title="FAQs" />
     <item
+        android:id="@+id/nav_wishlist"
+        android:icon="@drawable/wishlisticon"
+        android:title="wishlist" />
+    <item
         android:id="@+id/nav_newsf"
         android:icon="@drawable/newsicon"
         android:title="News" />

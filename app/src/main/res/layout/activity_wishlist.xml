@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgabstract"
+    tools:context=".Wishlist">
+
+    <TextView
+        android:id="@+id/wishlistone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="Samsung Galaxy S9"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/wishlisttwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wishlistone"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Samsung Galaxy Note9"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/wishlistthree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wishlisttwo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Apple Iphone XS"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/black" />
+</RelativeLayout>

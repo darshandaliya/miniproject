@@ -79,8 +79,8 @@ public class navigationfinal extends AppCompatActivity {
                 else if (id==R.id.nav_faqf)
                 {
 //                    finish();
-//                    Intent intent=new Intent(navigationfinal.this,FAQs.class);
-//                    startActivity(intent);
+                    Intent intent=new Intent(navigationfinal.this,FAQs.class);
+                    startActivity(intent);
                 }
 
                 else if (id==R.id.nav_productsf)
@@ -89,6 +89,13 @@ public class navigationfinal extends AppCompatActivity {
                     Intent intent=new Intent(navigationfinal.this,Retrieve.class);
                     startActivity(intent);
                 }
+                else if (id==R.id.nav_wishlist)
+                {
+//                    finish();
+                    Intent intent=new Intent(navigationfinal.this,Wishlist.class);
+                    startActivity(intent);
+                }
+
                 menuItem.setChecked(true);
                 drawerLayout.closeDrawers();
                 return true;
