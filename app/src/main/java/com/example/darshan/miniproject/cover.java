@@ -46,7 +46,7 @@ public class cover extends AppCompatActivity implements View.OnClickListener {
         if(v==adminbutton)
         {
             finish();
-            startActivity(new Intent(this,adminview.class));
+            startActivity(new Intent(this,adminlogin.class));
         }
     }
 }

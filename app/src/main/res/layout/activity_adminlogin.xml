@@ -5,53 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgabstract"
-    tools:context=".login">
+    tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-
+        tools:layout_editor_absoluteY="0dp">
 
 
         <Button
-            android:id="@+id/login"
+            android:id="@+id/bbadmin"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="420dp"
+            android:layout_marginTop="533dp"
             android:layout_marginEnd="105dp"
             android:background="@drawable/buttonstyle"
-            android:textColor="#000000"
-            android:text="Login" />
-
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/gsignin"
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="575dp"
-            android:layout_marginEnd="105dp"
-            android:textColor="#000000" />
+            android:textColor="#fff"
+            android:text="login" />
 
         <EditText
-            android:id="@+id/emailid"
+            android:id="@+id/adminemail"
             android:layout_width="210dp"
             android:layout_height="35dp"
-            android:layout_below="@+id/imageView3"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="106dp"
-            android:layout_marginTop="300dp"
+            android:layout_marginTop="394dp"
             android:autoLink="email"
 
 
@@ -63,42 +47,30 @@
             android:textSize="16dp" />
 
         <EditText
-            android:id="@+id/pass"
+            android:id="@+id/adminpass"
             android:layout_width="210dp"
             android:layout_height="35dp"
-            android:layout_alignEnd="@+id/emailid"
+            android:layout_alignEnd="@+id/adminemail"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="350dp"
+            android:layout_marginTop="450dp"
             android:layout_marginEnd="0dp"
             android:background="@color/common_google_signin_btn_text_dark_default"
-            android:drawableLeft="@drawable/ic_action_pass"
+            android:drawableStart="@drawable/ic_action_pass"
             android:ems="10"
             android:hint="PASSWORD"
             android:inputType="textPassword" />
 
-        <TextView
-            android:id="@+id/tvsignup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
 
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="650dp"
-
-            android:text="Click here to Signup "
-            android:textAlignment="center"
-            android:textColor="@color/black" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/adminimgv"
             android:layout_width="401dp"
             android:layout_height="wrap_content"
-
-            android:layout_alignTop="@+id/pass"
+            android:layout_above="@+id/adminemail"
+            android:layout_alignTop="@+id/adminpass"
             android:layout_alignParentStart="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="-400dp"
+            android:layout_marginTop="-323dp"
             android:layout_marginBottom="-337dp"
             app:srcCompat="@drawable/sabletransparent" />
 

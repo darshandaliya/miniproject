@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".cover"
-    android:background="@drawable/bgsab"
+    android:background="@drawable/bgabstract"
     android:orientation="vertical">
 
     <LinearLayout
@@ -40,9 +40,10 @@
 
         <Button
             android:id="@+id/adminbutton"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
+            android:background="@drawable/buttonstyle"
             android:text="admin" />
 
         <LinearLayout
