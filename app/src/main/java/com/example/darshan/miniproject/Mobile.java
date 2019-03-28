@@ -10,7 +10,7 @@ public class Mobile {
 
     public Mobile()
     {
-        
+
     }
 
     public Mobile(String model, float price, float ram, float screen_size, float storage) {

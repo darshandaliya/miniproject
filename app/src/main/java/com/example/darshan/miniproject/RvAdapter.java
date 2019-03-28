@@ -71,5 +71,11 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.MyViewHolder> {
     }
 
 
+    public void updateList(ArrayList<Mobile> newlist)
+    {
+        mData=new ArrayList<>();
+        mData.addAll(newlist);
+        notifyDataSetChanged();
+    }
 
 }
