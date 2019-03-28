@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/coverbg"
+    android:background="@drawable/airplanebg"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -27,10 +27,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="523dp"
+            android:layout_marginTop="420dp"
             android:layout_marginEnd="105dp"
             android:background="@drawable/buttonstyle"
-            android:textColor="#fff"
+            android:textColor="#000000"
             android:text="Login" />
 
         <com.google.android.gms.common.SignInButton
@@ -39,18 +39,19 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="590dp"
+            android:layout_marginTop="575dp"
             android:layout_marginEnd="105dp"
-            android:textColor="#fff" />
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/emailid"
             android:layout_width="210dp"
             android:layout_height="35dp"
+            android:layout_below="@+id/imageView3"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="106dp"
-            android:layout_marginTop="394dp"
+            android:layout_marginTop="300dp"
             android:autoLink="email"
 
 
@@ -67,7 +68,7 @@
             android:layout_height="35dp"
             android:layout_alignEnd="@+id/emailid"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="450dp"
+            android:layout_marginTop="350dp"
             android:layout_marginEnd="0dp"
             android:background="@color/common_google_signin_btn_text_dark_default"
             android:drawableLeft="@drawable/ic_action_pass"
@@ -87,17 +88,17 @@
 
             android:text="Click here to Signup "
             android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+            android:textColor="@color/black" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="401dp"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/emailid"
+
             android:layout_alignTop="@+id/pass"
             android:layout_alignParentStart="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="-323dp"
+            android:layout_marginTop="-400dp"
             android:layout_marginBottom="-337dp"
             app:srcCompat="@drawable/sabletransparent" />
 

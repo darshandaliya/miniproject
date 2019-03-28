@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/airplanebg"
     tools:context=".CustomerService">
 
     <RelativeLayout
@@ -14,8 +15,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/email"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="130dp"
             android:textSize="30dp"
+            android:textColor="#000000"
             android:text="Email: "/>
 
         <TextView
@@ -34,8 +36,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/number"
-            android:layout_marginTop="300dp"
+            android:layout_marginTop="400dp"
             android:text="Contact Number:"
+            android:textColor="#000000"
             android:textSize="30dp"/>
 
         <TextView
@@ -43,6 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/number"
             android:text="2337573938"
+            android:textColor="#000000"
             android:textSize="30dp"/>
 
     </RelativeLayout>

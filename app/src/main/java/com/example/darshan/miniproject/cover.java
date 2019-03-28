@@ -12,6 +12,7 @@ public class cover extends AppCompatActivity implements View.OnClickListener {
     private Button newu;
     private Button exist;
     private ImageView iv3;
+    private Button adminbutton;
 
 
     @Override
@@ -22,9 +23,11 @@ public class cover extends AppCompatActivity implements View.OnClickListener {
         newu=(Button)findViewById(R.id.newuser);
         exist=(Button)findViewById(R.id.existinguser);
         iv3=(ImageView)findViewById(R.id.v3);
+        adminbutton=(Button)findViewById(R.id.adminbutton);
 
         newu.setOnClickListener(this);
         exist.setOnClickListener(this);
+        adminbutton.setOnClickListener(this);
 
     }
 
@@ -39,6 +42,11 @@ public class cover extends AppCompatActivity implements View.OnClickListener {
         {
             finish();
             startActivity(new Intent(this, login.class));
+        }
+        if(v==adminbutton)
+        {
+            finish();
+            startActivity(new Intent(this,adminview.class));
         }
     }
 }
