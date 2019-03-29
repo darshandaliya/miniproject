@@ -25,8 +25,9 @@
         <activity android:name=".CustomerService" />
         <activity android:name=".cover" />
         <activity android:name=".navigationfinal" />
-        <activity android:name=".DetailsActivity" />
         <activity android:name=".newsapp" />
+        <activity android:name=".DetailsActivity" />
+
         <activity android:name=".Retrieve" /> <!-- <activity -->
         <!-- android:name=".Rview" -->
         <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
