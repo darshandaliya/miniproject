@@ -15,7 +15,7 @@ public class FAQs extends AppCompatActivity {
         setContentView(R.layout.activity_faqs);
 
         //expandableTextView =(ExpandableTextView)findViewById(R.id.expandabletv1);
-        expandableTextView.setText(question1);
+       expandableTextView.setText(question1);
 
     }
 }

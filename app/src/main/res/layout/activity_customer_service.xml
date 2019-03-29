@@ -28,7 +28,7 @@
             android:layout_below="@+id/email"
             android:clickable="true"
             android:textSize="30dp"
-            android:text="customercare@sable.com"
+            android:text="sablecustomercare@gmail.com"
             android:textColor="@color/common_google_signin_btn_text_dark_focused"
             />
 

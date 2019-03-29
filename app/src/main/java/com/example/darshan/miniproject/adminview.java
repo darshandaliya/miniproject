@@ -58,7 +58,7 @@ public class adminview extends AppCompatActivity {
                 int id=menuItem.getItemId();
                 if(id==R.id.nav_faqf){
 
-                    Intent intent=new Intent(adminview.this,FAQs.class);
+                    Intent intent=new Intent(adminview.this,faq_customer.class);
                     startActivity(intent);
                 }
 
@@ -81,6 +81,8 @@ public class adminview extends AppCompatActivity {
                 }
 
                 else if(id==R.id.nav_addproducts){
+                    Intent intent=new Intent(adminview.this,AdminCategoryActivity.class);
+                    startActivity(intent);
 
                 }
 

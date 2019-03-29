@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,9 +25,9 @@ public class adminlogin extends AppCompatActivity implements View.OnClickListene
     private EditText pass;
 
 
+    private FirebaseAuth firebaseAuth;
 
-
-
+    private ProgressDialog pD;
 
 
 
@@ -35,7 +36,13 @@ public class adminlogin extends AppCompatActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adminlogin);
 
+        firebaseAuth=firebaseAuth.getInstance();
 
+        if(firebaseAuth.getCurrentUser() !=null){
+            //Profile Activity here
+            finish();
+            startActivity(new Intent(getApplicationContext(), adminview.class));
+        }
 
         email=(EditText)findViewById(R.id.adminemail);
         pass=(EditText)findViewById(R.id.adminpass);
@@ -43,8 +50,10 @@ public class adminlogin extends AppCompatActivity implements View.OnClickListene
 
 
 
+        pD=new ProgressDialog(this);
 
         bb.setOnClickListener(this);
+
 
 
     }
@@ -70,22 +79,26 @@ public class adminlogin extends AppCompatActivity implements View.OnClickListene
             return;
             //To stop the function from executing further.
         }
+        //Will show progress dialog if validation without error.
+        pD.setMessage("Logging in...");
+        pD.show();
 
-        if(email.getText().toString().equals("priyanshubindal@gmail.com") && pass.getText().toString().equals("priyanshu123")){
-
-            finish();
-            startActivity(new Intent(this, adminview.class));
-            //correcct password
-        }else{
-            //wrong password
-        }
-        {
-
-        }
-
-
-
-
+        firebaseAuth.signInWithEmailAndPassword(loginemail, loginpassword)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        pD.dismiss();
+                        if (task.isSuccessful()){
+                            //Start the profile activity
+                            finish();
+                            startActivity(new Intent(getApplicationContext(), adminview.class));
+                        }
+                        else
+                        {
+                            Toast.makeText(adminlogin.this, "Login Failed",Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
     }
 
     @Override

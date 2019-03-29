@@ -76,12 +76,12 @@ public class navigationfinal extends AppCompatActivity {
                     Intent intent=new Intent(navigationfinal.this,cover.class);
                     startActivity(intent);
                 }
-                else if (id==R.id.nav_faqf)
-                {
-//                    finish();
-                    Intent intent=new Intent(navigationfinal.this,FAQs.class);
-                    startActivity(intent);
-                }
+//                else if (id==R.id.nav_faqf)
+//                {
+////                    finish();
+//                    Intent intent=new Intent(navigationfinal.this,FAQs.class);
+//                    startActivity(intent);
+//                }
 
                 else if (id==R.id.nav_productsf)
                 {
@@ -93,6 +93,12 @@ public class navigationfinal extends AppCompatActivity {
                 {
 //                    finish();
                     Intent intent=new Intent(navigationfinal.this,Wishlist.class);
+                    startActivity(intent);
+                }
+                else if (id==R.id.nav_faqf)
+                {
+//                    finish();
+                    Intent intent=new Intent(navigationfinal.this,faq_customer.class);
                     startActivity(intent);
                 }
 

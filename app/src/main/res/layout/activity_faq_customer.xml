@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgabstract"
+    tools:context=".faq_customer">
+
+
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What do you actually want from your new phone?"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a list of features and put it in priority order (first item on the list being most important). Items on the list can include battery life, general performance, screen size and quality, presence of a fingerprint scanner, photo quality, audio/video recording, water resistance, durability (i.e. will it survive a drop?), storage space, and dual SIM capabilities.
+"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/question1"
+        />
+
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What about after-sales support?"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/answer1"
+        />
+
+    <TextView
+        android:id="@+id/answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Almost as important (if not more important) than the phone itself is the after-sales support. Who cares if you got a super-duper high-end smartphone if it costs R6000 to fix?
+So enquire with the retailer about what you can expect if the phone breaks."
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/question2"
+        />
+
+    <TextView
+        android:id="@+id/question3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What defines a good camera?"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/answer2"
+        />
+
+    <TextView
+        android:id="@+id/answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We've arrived at a point in smartphone evolution where the camera matters more than the processor, especially considering most people use their phones as their primary shooters. More and more smartphones boast cameras with at least 12 megapixels, but don't go by only that stat. Instead, pay attention to image quality, aperture, speed and features.
+When it comes to video, pay attention not just to the resolution but also the frame rate. "
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/question3"
+        />
+</RelativeLayout>
